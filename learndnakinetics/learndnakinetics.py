@@ -375,7 +375,15 @@ def set_configuration():
 	configParser.readfp(open(r'config_file.txt'))
 	CONFIG_NAME = 'learndnakinetics'
 	parent.rate_method= configParser.getint(CONFIG_NAME, 'rate_method')
-	print "Literals.rate_method is set to ", parent.rate_method
+
+	if parent.rate_method == 1 :
+		print "\nStarting to estimate parameters for the Metropolis kinetic model"
+	elif parent.rate_method ==3 :
+		print "\nStarting to estimate parameters for the Arrhenius kinetic model"
+	else :
+		raise ValueError('rate_method should be either 1 or 3 in the configuration file')
+	print "\n"
+	print "Literals.rate_method is set to ",
 
 	n_processors =    configParser.getint(CONFIG_NAME, 'n_processors')
 	use_multiprocess =  bool(configParser.getint(CONFIG_NAME, 'use_multiprocess') )
