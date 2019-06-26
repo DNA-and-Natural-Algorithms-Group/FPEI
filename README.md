@@ -36,7 +36,7 @@ Disclaimer: This software is free for use only for research purposes. If you mak
 # Setup
 For linux:
 - Download and install the requirements. 
-- Set the system environment variables to point NUPACKHOME to the folder where NUPACK is installed. For example, in openSUSE, you can use the following command: ' export NUPACKHOME=path/to/NUPACK3.0.4 '. To verify that the NUPACKHOME is correctly set, run ' echo $NUPACKHOME '. 
+- Set the system environment variables to point NUPACKHOME to the folder where NUPACK is installed. For example, in openSUSE, you can run : ' export NUPACKHOME=path/to/NUPACK3.0.4 '. To verify that the NUPACKHOME is correctly set, run ' echo $NUPACKHOME '. 
 - Clone our software directory into your workspace. 
 - In the  multistrand_modified directory,
   - Build Multistrand by running ' make clean ' and then ' make '. Upon successful  building of  Multistrand you should get a message such as "Multistrand is now built. ... ".
@@ -57,18 +57,19 @@ This software contains 5  directories, namely, multistrand_modified, learndnakin
 
 # Software Usage 
 To use FPEI or SSAI with the dataset provided:
-- In 'learndnakinetics/config_file.txt': 
+- In ' learndnakinetics/config_file.txt ': 
   - Set *use_FPEI_MFPT = 1* and *use_Gillespie_MFPT=0* to use FPEI. Set *use_FPEI_MFPT = 0* and *use_Gillespie_MFPT=1* to use SSAI. 
   - Set *rate_method = 3* to estimate parameters for the  Arrhenius kinetic model. Set *rate_method = 3* to estimate parameters for the Metropolis kinetic model. 
   - Set *parameter_folder* to be the path to a directory to save results. In this folder, the MSE of the parameters over the entire reactions of the dataset is logged. In addition, the parameter set of each iteration of the optimization will be logged. Also, the  fixed paths in FPEI will be saved.   
   - Set *n_processors* to be the number of processors for multiprocessing the computation of the objective function. Set *use_multiprocess =1* to multiprocess the computations. 
- - In 'map.py': 
+ - In ' map.py ': 
    - Set the initial parameter set. 
  - Run learndnakinetics/map.py. 
+ 
+  If you have successfully installaled this software,  you will get a message such as "Starting to estimate parameters for the Arrhenius kinetic model". 
 
-If you have successfully installaled this software,  you will get a message such as "Starting to estimate parameters for the Arrhenius kinetic model". 
 To plot the results, similar to Fig. 5 from [1], from parameter estimation using FPEI vs SSAI: 
- - in 'plot/plot_ssavsftei.py'
+ - in ' plot/plot_ssavsftei.py '
    - Provide the path to the *parameter_folder* directory that the FPEI results are saved.
    - Provide the path to the *parameter_folder* direcotory that the SSAI results are saved.
  - Run plot/plot_ssavsftei.py
