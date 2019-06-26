@@ -36,12 +36,12 @@ Disclaimer: This software is free for use only for research purposes. If you mak
 # Setup
 For linux:
 - Download and install the requirements. 
-- Set the system environment variables to point NUPACKHOME to the folder where NUPACK is installed. For example, in openSUSE, you can use the following command: export NUPACKHOME=path/to/NUPACK3.0.4 
+- Set the system environment variables to point NUPACKHOME to the folder where NUPACK is installed. For example, in openSUSE, you can use the following command: ' export NUPACKHOME=path/to/NUPACK3.0.4 '. To verify that the NUPACKHOME is correctly set, run ' echo $NUPACKHOME '. 
 - Clone our software directory into your workspace. 
 - In the  multistrand_modified directory,
-  - Build Multistrand by running 'make'.
-  - Export  Multistrand as a Python library by running  'make install'.
-  - Set the  PYTHONPATH evironment variable to point to the multistrand_modified  directory. For example, in openSUSE, you can use the following command:  export PYTHONPATH="${PYTHONPATH}:path/to/multistrand_modified" 
+  - Build Multistrand by running ' make clean ' and then ' make '. Upon successful  building of  Multistrand you should get a message such as "Multistrand is now built. ... ".
+  - Export  Multistrand as a Python library by running  ' make install '. 
+  - Set the  PYTHONPATH evironment variable to point to the multistrand_modified  directory. For example, in openSUSE, you can use the following command: ' export PYTHONPATH="${PYTHONPATH}:path/to/multistrand_modified" '.  
 
   Note that this software only works with the modified Multistrand code provided here, and will not work with the original version of Multistrand.
 
@@ -65,7 +65,8 @@ To use FPEI or SSAI with the dataset provided:
  - In 'map.py': 
    - Set the initial parameter set. 
  - Run learndnakinetics/map.py. 
-  
+
+If you have successfully installaled this software,  you will get a message such as "Starting to estimate parameters for the Arrhenius kinetic model". 
 To plot the results, similar to Fig. 5 from [1], from parameter estimation using FPEI vs SSAI: 
  - in 'plot/plot_ssavsftei.py'
    - Provide the path to the *parameter_folder* directory that the FPEI results are saved.
