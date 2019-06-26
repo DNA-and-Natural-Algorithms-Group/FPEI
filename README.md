@@ -64,7 +64,7 @@ To use FPEI or SSAI with the dataset provided:
   - Set *n_processors* to be the number of processors for multiprocessing the computation of the objective function. Set *use_multiprocess =1* to multiprocess the computations. 
  - In ' map.py ': 
    - Set the initial parameter set. 
- - Run learndnakinetics/map.py. 
+ - Run  ' learndnakinetics/map.py '. 
  
   If you have successfully installaled this software,  you will get a message such as "Starting to estimate parameters for the Arrhenius kinetic model". 
 
@@ -72,7 +72,7 @@ To plot the results, similar to Fig. 5 from [1], from parameter estimation using
  - in ' plot/plot_ssavsftei.py '
    - Provide the path to the *parameter_folder* directory that the FPEI results are saved.
    - Provide the path to the *parameter_folder* direcotory that the SSAI results are saved.
- - Run plot/plot_ssavsftei.py
+ - Run ' plot/plot_ssavsftei.py '
  
 
 # References 
