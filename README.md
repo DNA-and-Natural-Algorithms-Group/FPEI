@@ -23,7 +23,7 @@ Disclaimer: This software is free for use only for research purposes. If you mak
 |c++11|gcc 4.8.5+|
 |make|4.0+ | 
 |<a href="http://www.nupack.org/">NUPACK</a> |3.2.1| 
-|Multistrand|We haved modified <a href="https://github.com/DNA-and-Natural-Algorithms-Group/multistrand">Multistrand</a>. Use the modified version provided in this directory| 
+|Multistrand|We haved modified <a href="https://github.com/DNA-and-Natural-Algorithms-Group/multistrand">Multistrand</a>. For this project, use the modified version provided in this directory| 
 |numpy|1.9.3+| 
 |SciPy | 1.1.0+ |
 | enum34 | 1.1.6+ | 
