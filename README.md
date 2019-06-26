@@ -39,7 +39,6 @@ For linux:
 - Set the system environment variables to point NUPACKHOME to the folder where NUPACK is installed. For example, in openSUSE, you can use the following command: export NUPACKHOME=path/to/NUPACK3.0.4 
 - Clone our software directory into your workspace. 
 - In the  multistrand_modified directory,
-  - Change branch by running 'git checkout fdann-devel'.
   - Build Multistrand by running 'make'.
   - Export  Multistrand as a Python library by running  'make install'.
   - Set the  PYTHONPATH evironment variable to point to the multistrand_modified  directory. For example, in openSUSE, you can use the following command:  export PYTHONPATH="${PYTHONPATH}:path/to/multistrand_modified" 
@@ -53,7 +52,7 @@ This software contains 5  directories, namely, multistrand_modified, learndnakin
   - hairpin_bonnet98: reactions 1-10 in Table 1 from [1]. These reactions are originally from [3]. 
   - helix4_cisse2012: reactions 11-15 in Table 1 from [1]. These reactions are originally from  [4].
   - helix2_hata2017: reactions 16-19  in Table 1 from [1]. These reactions are originally from  [5]. 
-- multistrand_modfied: The modified Multistrand code adapted from the  <a href="https://github.com/DNA-and-Natural-Algorithms-Group/multistrand">  Multistrand repository</a> [2]. 
+- multistrand_modfied: The modified Multistrand code adapted from the branch 'fdann-devel' from  <a href="https://github.com/DNA-and-Natural-Algorithms-Group/multistrand">  Multistrand repository</a> [2]. 
 - plot: contains code to plot the results from parameter estimation, similar to Fig. 5 from [1].  
 
 # Software Usage 
