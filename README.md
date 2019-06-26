@@ -60,7 +60,7 @@ To use FPEI or SSAI with the dataset provided:
 - In 'learndnakinetics/config_file.txt': 
   - Set *use_FPEI_MFPT = 1* and *use_Gillespie_MFPT=0* to use FPEI. Set *use_FPEI_MFPT = 0* and *use_Gillespie_MFPT=1* to use SSAI. 
   - Set *rate_method = 3* to estimate parameters for the  Arrhenius kinetic model. Set *rate_method = 3* to estimate parameters for the Metropolis kinetic model. 
-  - Set *parameter_folder* to be the path to a directory to save results. In this folder, the parameter set of each iteration of the optimization will be saved.
+  - Set *parameter_folder* to be the path to a directory to save results. In this folder, the MSE of the parameters over the entire reactions of the dataset is logged. In addition, the parameter set of each iteration of the optimization will be logged. Also, the  fixed paths in FPEI will be saved.   
   - Set *n_processors* to be the number of processors for multiprocessing the computation of the objective function. Set *use_multiprocess =1* to multiprocess the computations. 
  - In 'map.py': 
    - Set the initial parameter set. 
