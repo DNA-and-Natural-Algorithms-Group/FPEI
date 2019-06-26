@@ -1,0 +1,20 @@
+[learndnakinetics]
+rate_method = 3
+#rate_method   is the kinetic model used by Multistrand, For the Metropolis model set rate_method = 1 ,  For the Arrhenius model set rate_method = 3
+parameter_folder = testFPEI
+#Parameter_folder is the name of the folder where the parameters are written to when you run learndnakinetics.py.
+n_processors=12
+#n_processors is the number of processors for learndnakinetics.py (consequently for samplemcmc.py)
+use_multiprocess =1
+#if use_multiprocess == 1 use multiprocess , if =0 don't use multiprocessing
+filter_smallandlarge_rates = 1
+# if filter_smallandlarge_rates == 1 ,  filter too small or too large rates  # see function  filter_parameter_set
+
+[parent]
+# To use FTEI set  use_FPEI_MFPT = 1 and use_Gillespie_MFPT = 0. 		# To use SSA set   use_FPEI_MFPT = 0 and use_Gillespie_MFPT = 1 
+use_FPEI_MFPT = 1
+#Equal to 0 or 1, 1 means use FPEI to find MFPT, 0 means do not use FPEI
+use_Gillespie_MFPT = 0
+#Equal to 0 or 1, 1 means use SSA to find MFPT, 0 means do not use SSA
+
+
