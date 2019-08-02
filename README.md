@@ -13,7 +13,7 @@ Please contact us at nasimzf@cs.ubc.ca for questions regarding the software.
 
 Disclaimer: This software is free for use only for research purposes. If you make use of this software, please cite our paper
 
-[1] S. Zolaktaf, F. Dannenberg, E. Winfree, A. Bouchard-Côté, M. Schmidt, A. Condon, Efficient Parameter Estimation for DNA Kinetics Modeled as Continuous-Time Markov Chains, 25th International Conference on DNA Computing and Molecular Programming, To Appear, 2019
+[1] Zolaktaf, Sedigheh, Frits Dannenberg, Erik Winfree, Alexandre Bouchard-Côté, Mark Schmidt, and Anne Condon. "Efficient Parameter Estimation for DNA Kinetics Modeled as Continuous-Time Markov Chains." In International Conference on DNA Computing and Molecular Programming, pp. 80-99. Springer, Cham, 2019.
 
 # Requirements 
 
